@@ -1,0 +1,165 @@
+/* Global styles */
+.login_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use viewport height instead of 100% */
+    width: 100%;
+    padding: 20px; /* Add some spacing on smaller screens */
+    background-color: #f6f6f6;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* Centering the form */
+.login-part {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ecf0f3;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    text-align: center;
+    margin: auto; /* Ensures centering in all scenarios */
+}
+
+/* Logo */
+.logo {
+  background: url('./banking_app_logo.png');
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #f4f4f5,
+              8px 8px 15px #afaaa7, -8px -8px 15px #fff;
+}
+/* Title */
+.title {
+    font-size: 25px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input field container */
+.fields {
+    width: 100%;
+    padding: 3px  0;
+}
+
+/* Input fields */
+.fields input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* Username & Password fields */
+.username, .password {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 8px #a4b5c6, -8px -8px 8px #ecf9fb;
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+
+/* SVG icons inside input fields */
+.svg-icon {
+    height: 22px;
+    margin: 0 10px;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    background: #02c8db;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    transition: all 0.4s ease-in;
+}
+
+.login-button:hover {
+    background: #50e5b9;
+    font-size: 22px;
+}
+
+/* Forgot Password / Register Link */
+.link {
+    padding-top: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #aaa;
+}
+/* Input group container */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  /* Icon container styling */
+  .icon-container {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Input icon styling */
+  .input-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Input field styling */
+  .user-input, .pass-input {
+    width: 100%;
+    padding: 12px 20px 12px 50px; /* Extra left padding for icon */
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Focus state styling */
+  .user-input:focus, .pass-input:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 8px rgba(0, 102, 204, 0.3);
+  }
+  
+  /* For select elements */
+  .user-input.select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  /* Textarea specific styling */
+  .user-input.textarea {
+    height: 100px;
+    resize: vertical;
+  }
